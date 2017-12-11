@@ -1,0 +1,34 @@
+body{
+	font-family: Open Sans;
+	display: flex;
+	flex-direction: column;
+	}
+
+#main{
+	background: url("../img/main.jpg") no-repeat center center scroll;
+	/*border: 1px solid red;*/
+	flex-basis: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 100%;
+	/*border: 1px solid blue;*/
+	
+}
+
+header *{
+	color: gray;
+	text-decoration: none;
+}
+
+#mainText{
+	margin-top: 30vh;
+	align-self: center;
+	flex-grow: 1;
+	/*border: 1px solid green;*/
+}
