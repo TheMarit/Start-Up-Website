@@ -63,6 +63,7 @@ h3 {
 	display: flex;
 	flex-basis: 100vh;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 #logo{
@@ -86,6 +87,64 @@ h3 {
 	color: white;
 	text-align: center;
 	animation: 2s moveUp, 2s fadeIn;
+}
+
+#gallery{
+	flex-basis: 150vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.galleryContent{
+	flex-basis: 60%;
+	text-align: center;
+}
+
+#pictures{
+	flex-basis: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.smallimg{
+	flex-basis: 30%;
+}
+
+.bigimg{
+	flex-basis: 60%;
+}
+
+
+#pic1{
+	width: 100%;
+    height: 300px;
+    background: url('../img/mountain1.jpg') no-repeat center center scroll;
+    background-size: cover;
+}
+
+#pic2{
+	width: 100%;
+    height: 300px;
+	background: url('../img/mountain2.jpg') no-repeat center center scroll;
+    background-size: cover;
+}
+
+#pic3{
+	width: 100%;
+    height: 300px;
+    background: url('../img/mountain3.jpg') no-repeat center center scroll;
+    background-size: cover;
+}
+
+#pic4{
+	width: 100%;
+    height: 300px;
+    background: url('../img/mountain4.jpg') no-repeat center center scroll;
+    background-size: cover;
 }
 
 @keyframes fadeIn {
