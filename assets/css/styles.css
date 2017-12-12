@@ -4,31 +4,88 @@ body{
 	flex-direction: column;
 	}
 
-#main{
-	background: url("../img/main.jpg") no-repeat center center scroll;
-	/*border: 1px solid red;*/
-	flex-basis: 100vh;
-	display: flex;
-	flex-direction: column;
-	color: white;
-}
-
 header{
 	display: flex;
 	justify-content: space-between;
-	flex-basis: 100%;
+	align-items: center;
+	/*flex-basis: 100%;*/
 	/*border: 1px solid blue;*/
+	animation: 2s fadeIn;
 	
 }
 
 header *{
-	color: gray;
+	color: white;
 	text-decoration: none;
+	margin: 30px;
 }
 
-#mainText{
-	margin-top: 30vh;
-	align-self: center;
-	flex-grow: 1;
-	/*border: 1px solid green;*/
+nav a {
+	margin: 15px;
+}
+
+button{
+	background: #571edb;
+	color: white;
+	padding: 10px 30px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 25px;
+	margin-top: 0px;
+}
+
+#hero{
+	display: flex;
+	
+	flex-basis: 100vh;
+	justify-content: center;
+}
+
+#logo{
+	font-family: Quicksand;
+	font-size: 30px;
+}
+
+#hero .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	z-index: -1;
+	background-color: #80a3db;
+}
+
+.hero-content{
+	margin-top: 20vh;
+	color: white;
+	text-align: center;
+	animation: 2s moveUp, 2s fadeIn;
+}
+
+@keyframes fadeIn {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes moveUp {
+	0%{
+		transform: translateY(100px);
+	}
+	100%{
+		transform: translateY(0);
+	}
 }
