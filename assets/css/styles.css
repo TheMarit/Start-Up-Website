@@ -24,13 +24,30 @@ nav a {
 	margin: 15px;
 }
 
-button{
-	background: #571edb;
-	color: white;
-	padding: 10px 30px;
-	border: none;
-	font-size: 14px;
-	cursor: pointer;
+.btn{
+  outline:none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  background-color: #001a61;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 6px #000a30;
+  
+}
+.btn:hover{
+  box-shadow: 0 4px #000a30;
+  top: 2px;
+}
+.btn:active{
+  box-shadow: none;
+  top: 6px;
 }
 
 h1 {
@@ -44,7 +61,6 @@ h3 {
 
 #hero{
 	display: flex;
-	
 	flex-basis: 100vh;
 	justify-content: center;
 }
