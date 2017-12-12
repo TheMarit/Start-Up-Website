@@ -64,6 +64,10 @@ h3 {
 	margin-top: 0px;
 }
 
+.hero-content h3{
+	font-weight: 400;
+}
+
 #hero{
 	display: flex;
 	flex-basis: 100vh;
@@ -106,7 +110,7 @@ h3 {
 	flex-basis: 55%;
 	text-align: center;
 	color: DimGray;
-	margin: 50px;
+	margin: 50px auto;
 }
 
 #pictures{
@@ -234,8 +238,13 @@ ul{
 }
 
 ul i{
+	color: rgba(255, 255, 255, 0.8);
+	margin-right: 20px;
+}
+ul i:hover{
 	color: white;
 	margin-right: 20px;
+	cursor: pointer;
 }
 
 footer p {
@@ -281,9 +290,13 @@ footer p {
 	.quote{
 		font-size: 19px;
 	}
-	footer{
+	footer, .newsletter{
 		flex-direction: column;
 	}
+	input{
+		margin-right: 0px;
+	}
+
 }
 @media screen and (max-width: 650px) {
     .bigimg {
@@ -322,6 +335,9 @@ footer p {
 	}
 	.quote{
 		font-size: 16px;
+	}
+	.galleryContent{
+		flex-basis: 90%;
 	}
 
 }
