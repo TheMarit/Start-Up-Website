@@ -1,18 +1,30 @@
 
 body{
 	font-family: Open Sans;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 0;
 	}
 
 header{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	/*flex-basis: 100%;*/
 	/*border: 1px solid blue;*/
-	animation: 2s fadeIn;
+	-webkit-animation: 2s fadeIn;
+	        animation: 2s fadeIn;
 	position: absolute;
 	width: 100%;
 	
@@ -43,15 +55,18 @@ nav a {
   padding: 20px 50px;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 6px #000a30;
+  -webkit-box-shadow: 0 6px #000a30;
+          box-shadow: 0 6px #000a30;
   
 }
 .btn:hover{
-  box-shadow: 0 4px #000a30;
+  -webkit-box-shadow: 0 4px #000a30;
+          box-shadow: 0 4px #000a30;
   top: 2px;
 }
 .btn:active{
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   top: 6px;
 }
 
@@ -69,10 +84,17 @@ h3 {
 }
 
 #hero{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-basis: 100vh;
-	justify-content: center;
-	align-items: flex-start;
+	-ms-flex-preferred-size: 100vh;
+	    flex-basis: 100vh;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	position: relative;
 }
 
@@ -96,29 +118,42 @@ h3 {
 	margin: auto;
 	color: white;
 	text-align: center;
-	animation: 2s moveUp, 2s fadeIn;
+	-webkit-animation: 2s moveUp, 2s fadeIn;
+	        animation: 2s moveUp, 2s fadeIn;
 }
 
 #gallery, #tourPackages, #testimonials, #learnMore{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 3vw;
 }
 
 .galleryContent{
-	flex-basis: 55%;
+	-ms-flex-preferred-size: 55%;
+	    flex-basis: 55%;
 	text-align: center;
 	color: DimGray;
 	margin: 50px auto;
 }
 
 #pictures{
-	flex-basis: 90%;
+	-ms-flex-preferred-size: 90%;
+	    flex-basis: 90%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-line-pack: distribute;
+	    align-content: space-around;
 	margin-bottom: 50px;
 }
 
@@ -169,19 +204,31 @@ h3 {
 
 }
 #tours{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 .tour{
-	flex-basis: 35%;
+	-ms-flex-preferred-size: 35%;
+	    flex-basis: 35%;
 	text-align: center;
 	padding: 40px;
 }
 #reviews{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .review{
 	text-align: center;
@@ -199,9 +246,14 @@ i{
 }
 
 .newsletter{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 60%;
 }
 
@@ -218,21 +270,32 @@ input{
     margin-right: 30px;
     font-size: 18px;
     color: #555;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-top: 10px;
 }
 
 footer{
 	background-color: #607d8b;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	color: white;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 ul{
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: white;
 }
@@ -253,6 +316,15 @@ footer p {
 	text-align: center;
 }
 
+@-webkit-keyframes fadeIn {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
 @keyframes fadeIn {
 	0%{
 		opacity: 0;
@@ -262,21 +334,36 @@ footer p {
 	}
 }
 
-@keyframes moveUp {
+@-webkit-keyframes moveUp {
 	0%{
-		transform: translateY(100px);
+		-webkit-transform: translateY(100px);
+		        transform: translateY(100px);
 	}
 	100%{
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+}
+
+@keyframes moveUp {
+	0%{
+		-webkit-transform: translateY(100px);
+		        transform: translateY(100px);
+	}
+	100%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
 }
 
 @media screen and (max-width: 900px) {
     .bigimg {
-        flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%;
     }
     .smallimg {
-        flex-basis: 47%;
+        -ms-flex-preferred-size: 47%;
+            flex-basis: 47%;
     }
     h1 {
 		font-size: 40px;
@@ -291,7 +378,10 @@ footer p {
 		font-size: 19px;
 	}
 	footer, .newsletter{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	input{
 		margin-right: 0px;
@@ -300,14 +390,20 @@ footer p {
 }
 @media screen and (max-width: 650px) {
     .bigimg {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     .smallimg {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     header{
-    	flex-wrap: wrap;
-    	flex-direction: column;
+    	-ms-flex-wrap: wrap;
+    	    flex-wrap: wrap;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
     }
     header * {
     	margin: 8px;
@@ -325,10 +421,14 @@ footer p {
   		border-radius: 6px;
 	}
 	#tours{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.tour{
-		flex-basis: auto;
+		-ms-flex-preferred-size: auto;
+		    flex-basis: auto;
 	}
 	.review{
 		width: 90%;
@@ -337,7 +437,8 @@ footer p {
 		font-size: 16px;
 	}
 	.galleryContent{
-		flex-basis: 90%;
+		-ms-flex-preferred-size: 90%;
+		    flex-basis: 90%;
 	}
 
 }
